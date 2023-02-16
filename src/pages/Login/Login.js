@@ -20,7 +20,7 @@ const Login = () => {
         if (user) {
           toast.success("Login successfully.");
           form.reset();
-          navigate("/");
+          navigate('/')
         }
       })
       .catch((err) => {
