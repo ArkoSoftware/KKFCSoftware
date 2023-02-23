@@ -8,7 +8,7 @@ const Navbar = ({sidebarOn, setSidebarOn}) => {
   const { user, logOut } = useContext(AuthContext);
   return (
     <section>
-      <div className="bg-[#2B2B2B] flex items-center justify-between px-5 py-3">
+      <div className="bg-[#2B2B2B] flex items-center justify-between px-5 py-[22px]">
         <div className="flex items-center">
           <label
             className="block lg:hidden"
@@ -23,8 +23,7 @@ const Navbar = ({sidebarOn, setSidebarOn}) => {
           <div tabIndex={0} className="flex items-center hover:cursor-pointer">
             <p className="border border-white text-white p-1 rounded-full mr-2">
               <FiUser />
-            </p>
-            <p className="text-white">{user?.displayName}</p>
+            </p> 
           </div>
           <ul
             tabIndex={0}

@@ -4,21 +4,25 @@ import { MdLogout } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { sidebarData } from "./SidebarData";
+import logo from '../../assets/logo.png';
 
 const Sidebar = () => {
   const { logOut } = useContext(AuthContext);
 
   return (
-    <ul className="menu p-4 w-64 bg-black text-base-content">
+    <ul className="menu p-4 pt-[30px] px-[35px] w-[276px] bg-black text-base-content">
+      <li>
+        <img src={logo} className="w-[170px] mb-[41px]" alt="" />
+      </li>
       {sidebarData.map((data, idx) => (
-        <li key={idx} className="hover:bg-[#2B2B2B]">
-          <Link to={data.link} className="text-white">
-            {data.icon} {data.text}
+        <li key={idx}>
+          <Link to={data.link} className="hover:bg-[#2B2B2B] text-white rounded-none mb-3">
+            {data.icon}{data.text}
           </Link>
         </li>
       ))}
       <li>
-        <button onClick={() => logOut()} className="bg-red-600 text-white">
+        <button onClick={() => logOut()} className="bg-red-600 text-white mt-3">
           <MdLogout /> LogOut{" "}
         </button>
       </li>
