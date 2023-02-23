@@ -1,14 +1,11 @@
 import React from "react";
 import {
   BarChart,
-  Bar,
-  Cell,
+  Bar, 
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
+  Tooltip, 
 } from "recharts";
 
 const data = [

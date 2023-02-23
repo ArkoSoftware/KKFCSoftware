@@ -3,7 +3,7 @@ import React from "react";
 const SalesTable = () => {
   return (
     <div>
-      <h4 className="text">Sales Table</h4>
+      <h4 className="text-xl mb-2">Sales Table</h4> 
       <div className="overflow-x-auto">
         <table className="table-normal w-full">
           <thead className="bg-[#AAAAAA] ">
@@ -54,6 +54,7 @@ const SalesTable = () => {
           </tbody>
         </table>
       </div>
+      <button className="text-[#0F4A00] mt-4 hover:underline">Add New Row</button>
     </div>
   );
 };

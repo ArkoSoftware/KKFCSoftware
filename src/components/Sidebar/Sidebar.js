@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { MdLogout } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { sidebarData } from "./SidebarData";
 import logo from "../../assets/logo.png";
@@ -18,13 +18,18 @@ const Sidebar = () => {
       </li>
       {sidebarData.map((data, idx) => (
         <li key={idx}>
-          <Link
+          <NavLink
             to={data.link}
-            className="hover:bg-[#2B2B2B] text-white rounded-none mb-3"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-[#2B2B2B] hover:bg-[#2B2B2B] text-white rounded-none mb-3"
+                : "bg-black hover:bg-[#2B2B2B] text-white rounded-none mb-3"
+            }
+            end
           >
             {data.icon}
             {data.text}
-          </Link>
+          </NavLink>
         </li>
       ))}
       <li>

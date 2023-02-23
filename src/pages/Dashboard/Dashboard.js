@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { mindGame } from "../Vendors/Vendors";
 import Chart from "./Chart";
 
-const dashboard = () => {
+const dashboard = () => { 
   return (
     <section className="pl-[15px] lg:pl-[46px] pt-[24px] pr-[15px]">
       <div className="md:flex justify-between items-center">
