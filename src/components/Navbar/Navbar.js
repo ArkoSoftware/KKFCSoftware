@@ -11,7 +11,7 @@ const Navbar = ({sidebarOn, setSidebarOn}) => {
       <div className="bg-[#2B2B2B] flex items-center justify-between px-5 py-[22px]">
         <div className="flex items-center">
           <label
-            className="block lg:hidden"
+            className="block lg:hidden text-white"
             onClick={() => setSidebarOn(!sidebarOn)}
             htmlFor="my-drawer"
           >
