@@ -6,17 +6,17 @@ const Inventory = () => {
   const [sourceStore, SetSourceStore] = useState("");
   const [destinationStore, SetDestinationStore] = useState("");
   return (
-    <section className="pl-[15px] lg:pl-[46px] pt-[24px] pr-[15px]">
+    <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px]">
       <div className="md:flex justify-between items-center">
-        <h2 className="text-3xl mb-10 md:m-0">Inventory</h2>
+        <h2 className="text-xl mb-10 md:m-0">Inventory</h2>
         <div className="flex items-center gap-3">
-          <button className="py-1 px-3 rounded text-white bg-[#097D0D]">
+          <button className="py-1 px-3 rounded text-sm text-white bg-[#097D0D]">
             New Bill
           </button>
-          <button className="py-1 px-3 rounded text-white bg-[#097D0D]">
+          <button className="py-1 px-3 rounded text-sm text-white bg-[#097D0D]">
             Stock Management
           </button>
-          <button className="py-2 px-2 bg-[#CCCCCC] rounded">
+          <button className="py-2 px-2 text-sm bg-[#CCCCCC] rounded">
             <BsThreeDots />
           </button>
         </div>
@@ -54,7 +54,7 @@ const Inventory = () => {
             type="date"
             name=""
             id=""
-            className="w-full input input-bordered rounded-3xl mt-2"
+            className="w-full input input-sm input-bordered rounded-3xl mt-2"
           />
         </div>
         <div>
@@ -69,8 +69,8 @@ const Inventory = () => {
             <option selected disabled>
               Destination store
             </option>
-            <option value="Destination store">Destination store</option>
-            <option value="Destination store">Destination store</option>
+            <option value="Destination store">Destination store 1</option>
+            <option value="Destination store">Destination store 2</option>
           </select>
           <label
             htmlFor=""
