@@ -69,8 +69,8 @@ const Inventory = () => {
             <option selected disabled>
               Destination store
             </option>
-            <option value="Destination store">Destination store</option>
-            <option value="Destination store">Destination store</option>
+            <option value="Destination store">Destination store 1</option>
+            <option value="Destination store">Destination store 2</option>
           </select>
           <label
             htmlFor=""
