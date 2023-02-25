@@ -5,7 +5,7 @@ import SalesTable from "./SalesTable";
 const Sales = () => {
   const [isModalOn, setIsModalOn] = useState(false);
   return (
-    <section className="pl-[15px] lg:pl-[46px] pt-[24px] pr-[15px] pb-10">
+    <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px] pb-10">
       <div className="md:flex justify-between items-center">
         <h2 className="text-xl mb-10 md:m-0">Sales</h2>
         <div className="flex items-center">
