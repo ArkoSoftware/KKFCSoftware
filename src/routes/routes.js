@@ -8,6 +8,9 @@ import Sales from "../pages/Sales/Sales";
 import Inventory from "../pages/Inventory/Inventory";
 import Purchase from "../pages/Purchase/Purchase";
 import Vendors from "../pages/Vendors/Vendors";
+import BaltraElectronics from "../pages/BaltraElectronics/BaltraElectronics";
+import Bills from "../pages/Bills/Bills";
+import NewBill from "../pages/Bills/NewBill";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +40,18 @@ export const router = createBrowserRouter([
       {
         path: "/purchase/vendors",
         element: <Vendors />,
+      },
+      {
+        path: "/purchase/BaltraElectronics",
+        element: <BaltraElectronics />,
+      },
+      {
+        path: "/purchase/Bills",
+        element: <Bills />,
+      },
+      {
+        path: "/Bills/NewBill",
+        element: <NewBill />,
       },
     ],
   },
