@@ -6,6 +6,12 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Sales from "../pages/Sales/Sales";
 import Inventory from "../pages/Inventory/Inventory";
+import Purchase from "../pages/Purchase/Purchase";
+import Vendors from "../pages/Vendors/Vendors";
+import BaltraElectronics from "../pages/BaltraElectronics/BaltraElectronics";
+import Bills from "../pages/Bills/Bills";
+import NewBill from "../pages/Bills/NewBill";
+import AdjustStock from "../pages/AdjustStock/AdjustStock";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +33,30 @@ export const router = createBrowserRouter([
       {
         path: "/inventory",
         element: <Inventory />,
+      },
+      {
+        path: "/inventory/StockManagement",
+        element: <AdjustStock />,
+      },
+      {
+        path: "/purchase",
+        element: <Purchase />,
+      },
+      {
+        path: "/purchase/vendors",
+        element: <Vendors />,
+      },
+      {
+        path: "/purchase/BaltraElectronics",
+        element: <BaltraElectronics />,
+      },
+      {
+        path: "/purchase/Bills",
+        element: <Bills />,
+      },
+      {
+        path: "/Bills/NewBill",
+        element: <NewBill />,
       },
     ],
   },
