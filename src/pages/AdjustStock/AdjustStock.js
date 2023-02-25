@@ -2,19 +2,16 @@ import React from "react";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 
-const Inventory = () => {
+const AdjustStock = () => {
   const [sourceStore, SetSourceStore] = useState("");
   const [destinationStore, SetDestinationStore] = useState("");
   return (
     <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px]">
       <div className="md:flex justify-between items-center">
-        <h2 className="text-xl mb-10 md:m-0">Inventory</h2>
+        <h2 className="text-xl mb-10 md:m-0">Adjust Stock</h2>
         <div className="flex items-center gap-3">
           <button className="py-1 px-3 rounded text-sm text-white bg-[#097D0D]">
-            New Bill
-          </button>
-          <button className="py-1 px-3 rounded text-sm text-white bg-[#097D0D]">
-            Stock Management
+            Create Inventory
           </button>
           <button className="py-2 px-2 text-sm bg-[#CCCCCC] rounded">
             <BsThreeDots />
@@ -83,24 +80,18 @@ const Inventory = () => {
         </div>
       </div>
 
-      <div className="flex justify-between mt-5">
-        <h3 className="text-xl font-bold">Items</h3>
-        <button className="text-[#097D0D]">Import</button>
-      </div>
+      <h3 className="text-left text-xl font-bold mt-5">Items</h3>
 
       <div className="flex flex-row gap-3 justify-end mt-5">
         <button className="border border-[#097D0D] text-[#097D0D] px-2 rounded">
           Cancel
         </button>
         <button className="bg-[#097D0D] text-white border border-[#097D0D] px-2 rounded">
-          Create & Receive
-        </button>
-        <button className="bg-[#097D0D] text-white border border-[#097D0D] px-2 rounded">
-          Cancel
+          Adjust
         </button>
       </div>
     </section>
   );
 };
 
-export default Inventory;
+export default AdjustStock;

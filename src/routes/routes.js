@@ -11,6 +11,7 @@ import Vendors from "../pages/Vendors/Vendors";
 import BaltraElectronics from "../pages/BaltraElectronics/BaltraElectronics";
 import Bills from "../pages/Bills/Bills";
 import NewBill from "../pages/Bills/NewBill";
+import AdjustStock from "../pages/AdjustStock/AdjustStock";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/inventory",
         element: <Inventory />,
+      },
+      {
+        path: "/inventory/StockManagement",
+        element: <AdjustStock />,
       },
       {
         path: "/purchase",
