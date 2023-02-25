@@ -3,6 +3,7 @@ import sales from "../../assets/sales.png";
 import purchase from "../../assets/purchase.png";
 import inventory from "../../assets/inventory.png";
 import hr from "../../assets/hr.png";
+import stockManagement from "../../assets/stockManagement.png";
 
 export const sidebarData = [
   { text: "Dashboard", link: "/", icon: <img className="w-4" src={dashboard} alt="" /> },
@@ -10,4 +11,5 @@ export const sidebarData = [
   { text: "Purchase", link: "/purchase", icon: <img className="w-4" src={purchase} alt="" /> },
   { text: "Inventory", link: "/inventory", icon: <img className="w-4" src={inventory} alt="" /> },
   { text: "HR", link: "/hr", icon: <img className="w-4" src={hr} alt="" /> },
+  { text: "Stock Management", link: "/Stock Management", icon: <img className="w-4" src={stockManagement} alt="" /> },
 ];

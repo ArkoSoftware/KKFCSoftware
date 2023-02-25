@@ -6,6 +6,8 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Sales from "../pages/Sales/Sales";
 import Inventory from "../pages/Inventory/Inventory";
+import Purchase from "../pages/Purchase/Purchase";
+import Vendors from "../pages/Vendors/Vendors";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
       {
         path: "/inventory",
         element: <Inventory />,
+      },
+      {
+        path: "/purchase",
+        element: <Purchase />,
+      },
+      {
+        path: "/purchase/vendors",
+        element: <Vendors />,
       },
     ],
   },
