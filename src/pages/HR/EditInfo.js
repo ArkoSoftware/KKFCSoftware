@@ -116,12 +116,15 @@ const EditInfo = () => {
           <label htmlFor="accountNumber" className="block text-sm mb-2">
             Account Number
           </label>
-          <input
-            type="text"
+          <select
             name="accountNumber"
             id="accountNumber"
             className="input input-bordered input-sm w-full"
-          />
+          >
+            <option value="0098977482382763">0098977482382763</option>
+            <option value="0098977482382763">0098977482382763</option>
+            <option value="0098977482382763">0098977482382763</option>
+          </select>
           <button className="bg-[#097D0D] mt-10 w-full py-2 rounded text-white">
             Save Changes
           </button>
