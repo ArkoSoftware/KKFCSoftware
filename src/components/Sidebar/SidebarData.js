@@ -22,16 +22,6 @@ export const sidebarData = [
     icon: <img className="w-4" src={purchase} alt="" />,
   },
   {
-    text: "Vendors",
-    link: "/purchase/vendors",
-    icon: <img className="w-4" src={purchase} alt="" />,
-  },
-  {
-    text: "Baltra Electronics",
-    link: "/purchase/BaltraElectronics",
-    icon: <img className="w-4" src={purchase} alt="" />,
-  },
-  {
     text: "Bills",
     link: "/purchase/Bills",
     icon: <img className="w-4" src={purchase} alt="" />,
