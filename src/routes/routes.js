@@ -13,6 +13,7 @@ import Bills from "../pages/Bills/Bills";
 import NewBill from "../pages/Bills/NewBill";
 import AdjustStock from "../pages/AdjustStock/AdjustStock";
 import HR from "../pages/HR/HR";
+import EditInfo from "../pages/HR/EditInfo";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ export const router = createBrowserRouter([
       {
         path: "/HR",
         element: <HR />,
+      },
+      {
+        path: "/HR/EditInfo",
+        element: <EditInfo />,
       },
     ],
   },

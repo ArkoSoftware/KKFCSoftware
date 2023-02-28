@@ -92,11 +92,11 @@ const AdjustStock = () => {
         <h3 className="text-left text-xl font-bold mt-5">Items</h3>
 
         <div className="flex flex-row gap-3 justify-end mt-5">
-          <button className="border border-[#097D0D] text-[#097D0D] px-2 rounded">
+          <button className="border border-[#097D0D] text-sm text-[#097D0D] px-2 py-1 rounded">
             Cancel
           </button>
-          <button className="bg-[#097D0D] text-white border border-[#097D0D] px-2 rounded">
-            Adjust
+          <button className="bg-[#097D0D] text-sm text-white border border-[#097D0D] px-2 py-1 rounded">
+            Save
           </button>
         </div>
       </section>
