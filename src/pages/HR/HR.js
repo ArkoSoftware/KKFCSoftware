@@ -15,9 +15,11 @@ const HR = () => {
             <button className="py-1 px-5 rounded text-sm text-white bg-[#097D0D]">
               Payroll
             </button>
-            <button className="py-1 px-7 rounded text-sm text-white bg-[#097D0D]">
-              Add Employee
-            </button>
+            <Link to="/hr/addEmployee">
+              <button className="py-1 px-7 rounded text-sm text-white bg-[#097D0D]">
+                Add Employee
+              </button>
+            </Link>
             <button className="py-2 px-2 text-sm bg-[#CCCCCC] rounded">
               <BsThreeDots />
             </button>

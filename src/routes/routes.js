@@ -14,6 +14,7 @@ import NewBill from "../pages/Bills/NewBill";
 import AdjustStock from "../pages/AdjustStock/AdjustStock";
 import HR from "../pages/HR/HR";
 import EditInfo from "../pages/HR/EditInfo";
+import AddEmployee from "../pages/HR/AddEmployee";
 
 export const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ export const router = createBrowserRouter([
       {
         path: "/HR/EditInfo",
         element: <EditInfo />,
+      },
+      {
+        path: "/HR/AddEmployee",
+        element: <AddEmployee />,
       },
     ],
   },
