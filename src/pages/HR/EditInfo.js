@@ -13,62 +13,118 @@ const EditInfo = () => {
         </div>
       </div>
 
-      <form className="mt-12 grid grid-cols-2">
-        <div>
-          <p>Personal Information</p>
-          <label htmlFor="name" className="block">
+      <form className="mt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-start">
+        <div className="md:w-96">
+          <p className="mb-7">Personal Information</p>
+          <label htmlFor="name" className="block text-sm mb-2">
             Name
           </label>
           <input
             type="text"
             name="name"
             id="name"
-            className="input input-bordered input-sm w-full"
+            className="input input-bordered input-sm w-full mb-7"
           />
-          <div>
+          <div className="grid grid-cols-2 gap-5 mb-7">
             <div>
-              <label htmlFor="dateOfBirth">Date of Birth</label>
-              <input type="date" name="dateOfBirth" id="dateOfBirth" />
+              <label htmlFor="dateOfBirth" className="block mb-2 text-sm">
+                Date of Birth
+              </label>
+              <input
+                type="date"
+                name="dateOfBirth"
+                id="dateOfBirth"
+                className="input input-bordered input-sm w-full"
+              />
             </div>
             <div>
-              <label htmlFor="gender">Gender</label>
-              <select name="gender" id="gender">
+              <label htmlFor="gender" className="block mb-2 text-sm">
+                Gender
+              </label>
+              <select
+                name="gender"
+                id="gender"
+                className="input input-bordered input-sm w-full"
+              >
                 <option value="female">female</option>
                 <option value="Male">Male</option>
                 <option value="Others">Others</option>
               </select>
             </div>
           </div>
-          <div>
+          <div className="grid grid-cols-2 gap-5 mb-7">
             <div>
-              <label htmlFor="dateOfJoining">Date of Joining</label>
-              <input type="date" name="dateOfJoining" id="dateOfJoining" />
+              <label htmlFor="dateOfJoining" className="block text-sm mb-2">
+                Date of Joining
+              </label>
+              <input
+                type="date"
+                name="dateOfJoining"
+                id="dateOfJoining"
+                className="input input-bordered input-sm w-full"
+              />
             </div>
             <div>
-              <label htmlFor="salary">Salary</label>
-              <input type="text" name="salary" id="salary" />
+              <label htmlFor="salary" className="block text-sm mb-2">
+                Salary
+              </label>
+              <input
+                type="text"
+                name="salary"
+                id="salary"
+                className="input input-bordered input-sm w-full"
+              />
             </div>
           </div>
-          <label htmlFor="mobileNumber">Employee mobile number</label>
-          <input type="text" name="mobileNumber" id="mobileNumber" />
-          <label htmlFor="location">Employee Location</label>
-          <select name="location" id="location">
+          <label htmlFor="mobileNumber" className="block text-sm mb-2">
+            Employee mobile number
+          </label>
+          <input
+            type="text"
+            name="mobileNumber"
+            id="mobileNumber"
+            className="input input-bordered input-sm w-full mb-7"
+          />
+          <label htmlFor="location" className="block text-sm mb-2">
+            Employee Location
+          </label>
+          <select
+            name="location"
+            id="location"
+            className="input input-bordered input-sm w-full"
+          >
             <option value="Civil Mall, Kathmandu">Civil Mall, Kathmandu</option>
             <option value="Civil Mall, Kathmandu">Civil Mall, Kathmandu</option>
             <option value="Civil Mall, Kathmandu">Civil Mall, Kathmandu</option>
           </select>
         </div>
-        <div>
-          <p>Bank Details</p>
-          <label htmlFor="bankName">Bank Name</label>
-          <select name="bankName" id="bankName">
+
+        <div className="w-full md:w-96 mt-10 lg:mt-0 mb-10 lg:mb-0">
+          <p className="mb-7">Bank Details</p>
+          <label htmlFor="bankName" className="block text-sm mb-2">
+            Bank Name
+          </label>
+          <select
+            name="bankName"
+            id="bankName"
+            className="input input-bordered input-sm w-full mb-7"
+          >
             <option value="Nic Asia">Nic Asia</option>
             <option value="Nic Asia">Nic Asia</option>
             <option value="Nic Asia">Nic Asia</option>
           </select>
-          <label htmlFor="accountNumber">Account Number</label>
-          <input type="text" name="accountNumber" id="accountNumber" />
-          <button className="bg-[#097D0D]">Save Changes</button>
+          <label htmlFor="accountNumber" className="block text-sm mb-2">
+            Account Number
+          </label>
+          <input
+            type="text"
+            name="accountNumber"
+            id="accountNumber"
+            className="input input-bordered input-sm w-full"
+          />
+          <button className="bg-[#097D0D] mt-10 w-full py-2 rounded text-white">
+            Save Changes
+          </button>
         </div>
       </form>
     </section>
