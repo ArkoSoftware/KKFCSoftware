@@ -33,7 +33,10 @@ const Sidebar = () => {
         </li>
       ))}
       <li>
-        <button onClick={() => logOut()} className="bg-red-600 text-white mt-3 text-xs">
+        <button
+          onClick={() => logOut()}
+          className="bg-red-600 text-white mt-3 text-xs"
+        >
           <MdLogout /> LogOut{" "}
         </button>
       </li>
