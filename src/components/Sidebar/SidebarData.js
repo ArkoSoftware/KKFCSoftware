@@ -20,12 +20,7 @@ export const sidebarData = [
     text: "Purchase",
     link: "/purchase",
     icon: <img className="w-4" src={purchase} alt="" />,
-  },
-  {
-    text: "Bills",
-    link: "/purchase/Bills",
-    icon: <img className="w-4" src={purchase} alt="" />,
-  },
+  }, 
   {
     text: "Inventory",
     link: "/inventory",

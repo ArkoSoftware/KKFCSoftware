@@ -40,9 +40,11 @@ const Purchase = () => {
       </div>
 
       <div className="mt-6 mr-6">
-        <button className="bg-[#097D0D] w-28 mt-5 text-sm text-white px-3 py-[6px] rounded">
-          Bills
-        </button>
+        <Link to="/purchase/Bills">
+          <button className="bg-[#097D0D] w-28 mt-5 text-sm text-white px-3 py-[6px] rounded">
+            Bills
+          </button>
+        </Link>
         <div className="flex items-center justify-between mt-6 mb-3">
           <div className="flex items-center gap-4">
             <input type="checkbox" />
