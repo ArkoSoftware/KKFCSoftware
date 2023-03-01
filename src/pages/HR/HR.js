@@ -12,9 +12,11 @@ const HR = () => {
         <div className="md:flex justify-between items-center">
           <h2 className="text-xl mb-10 md:m-0">HR</h2>
           <div className="flex items-center gap-5">
-            <button className="py-1 px-5 rounded text-sm text-white bg-[#097D0D]">
-              Payroll
-            </button>
+            <Link to="/hr/payrol">
+              <button className="py-1 px-5 rounded text-sm text-white bg-[#097D0D]">
+                Payroll
+              </button>
+            </Link>
             <Link to="/hr/addEmployee">
               <button className="py-1 px-7 rounded text-sm text-white bg-[#097D0D]">
                 Add Employee

@@ -15,6 +15,7 @@ import AdjustStock from "../pages/AdjustStock/AdjustStock";
 import HR from "../pages/HR/HR";
 import EditInfo from "../pages/HR/EditInfo";
 import AddEmployee from "../pages/HR/AddEmployee";
+import Payroll from "../pages/HR/Payroll";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ export const router = createBrowserRouter([
       {
         path: "/HR/AddEmployee",
         element: <AddEmployee />,
+      },
+      {
+        path: "/hr/payrol",
+        element: <Payroll />,
       },
     ],
   },
