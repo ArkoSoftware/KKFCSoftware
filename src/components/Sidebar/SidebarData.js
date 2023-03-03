@@ -20,7 +20,23 @@ export const sidebarData = [
     text: "Purchase",
     link: "/purchase",
     icon: <img className="w-4" src={purchase} alt="" />,
+<<<<<<< Updated upstream
   }, 
+=======
+  },
+  {
+    text: "Vendors",
+    link: "/purchase/vendors",
+    icon: <img className="w-4" src={purchase} alt="" />,
+  },
+  // { text: "Baltra Electronics", link: "/purchase/BaltraElectronics", icon: <img className="w-4" src={purchase} alt="" /> },
+  /*{
+    text: "Bills",
+    link: "/purchase/Bills",
+    icon: <img className="w-4" src={purchase} alt="" />,
+  },
+  */
+>>>>>>> Stashed changes
   {
     text: "Inventory",
     link: "/inventory",
@@ -29,7 +45,11 @@ export const sidebarData = [
   { text: "HR", link: "/hr", icon: <img className="w-4" src={hr} alt="" /> },
   {
     text: "Stock Management",
+<<<<<<< Updated upstream
     link: "/inventory/StockManagement",
+=======
+    link: "/Stock Management",
+>>>>>>> Stashed changes
     icon: <img className="w-4" src={stockManagement} alt="" />,
   },
 ];
