@@ -12,6 +12,10 @@ import BaltraElectronics from "../pages/BaltraElectronics/BaltraElectronics";
 import Bills from "../pages/Bills/Bills";
 import NewBill from "../pages/Bills/NewBill";
 import AdjustStock from "../pages/AdjustStock/AdjustStock";
+import HR from "../pages/HR/HR";
+import EditInfo from "../pages/HR/EditInfo";
+import AddEmployee from "../pages/HR/AddEmployee";
+import Payroll from "../pages/HR/Payroll";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +61,22 @@ export const router = createBrowserRouter([
       {
         path: "/Bills/NewBill",
         element: <NewBill />,
+      },
+      {
+        path: "/HR",
+        element: <HR />,
+      },
+      {
+        path: "/HR/EditInfo",
+        element: <EditInfo />,
+      },
+      {
+        path: "/HR/AddEmployee",
+        element: <AddEmployee />,
+      },
+      {
+        path: "/hr/payrol",
+        element: <Payroll />,
       },
     ],
   },

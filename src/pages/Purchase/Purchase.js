@@ -20,17 +20,19 @@ const Purchase = () => {
             Vendors
           </button>
         </Link>
-        <div className="flex items-center justify-between mt-6 mb-3">
-          <div className="flex items-center gap-4">
-            <input type="checkbox" />
-            <p className="text-3xl text-gray-400">
-              <RiAccountCircleLine />
-            </p>
-            <p className="text-sm">Baltra Electronics</p>
-          </div>
+        <Link to="/purchase/BaltraElectronics">
+          <div className="flex items-center justify-between mt-6 mb-3">
+            <div className="flex items-center gap-4">
+              <input type="checkbox" />
+              <p className="text-3xl text-gray-400">
+                <RiAccountCircleLine />
+              </p>
+              <p className="text-sm">Baltra Electronics</p>
+            </div>
 
-          <button className="text-blue-600 text-sm underline">View</button>
-        </div>
+            <button className="text-blue-600 text-sm underline">View</button>
+          </div>
+        </Link>
         <div className="bg-gray-300 h-[1px]"></div>
         <div className="flex justify-end">
           <button className="text-blue-600 text-sm mt-2">See More</button>
@@ -38,9 +40,11 @@ const Purchase = () => {
       </div>
 
       <div className="mt-6 mr-6">
-        <button className="bg-[#097D0D] w-28 mt-5 text-sm text-white px-3 py-[6px] rounded">
-          Bills
-        </button>
+        <Link to="/purchase/Bills">
+          <button className="bg-[#097D0D] w-28 mt-5 text-sm text-white px-3 py-[6px] rounded">
+            Bills
+          </button>
+        </Link>
         <div className="flex items-center justify-between mt-6 mb-3">
           <div className="flex items-center gap-4">
             <input type="checkbox" />
