@@ -67,7 +67,7 @@ const Payroll = () => {
                 <br /> FROM GS
               </th>
             </tr>
-          </thead>
+          </thead> 
           <tbody>
             {[1, 2, 3].map((data) => (
               <tr className="border-b-2">
