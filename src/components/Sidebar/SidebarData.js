@@ -12,6 +12,11 @@ export const sidebarData = [
     icon: <img className="w-4" src={dashboard} alt="" />,
   },
   {
+    text: "Vendors",
+    link: "/purchase/vendors",
+    icon: <img className="w-4" src={dashboard} alt="" />,
+  },
+  {
     text: "Sales",
     link: "/sales",
     icon: <img className="w-4" src={sales} alt="" />,
@@ -20,7 +25,7 @@ export const sidebarData = [
     text: "Purchase",
     link: "/purchase",
     icon: <img className="w-4" src={purchase} alt="" />,
-  }, 
+  },
   {
     text: "Inventory",
     link: "/inventory",
