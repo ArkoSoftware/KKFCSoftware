@@ -18,7 +18,7 @@ const CreateInventoryModal = () => {
       />
       {showModal && ( // Only render modal component when showModal state variable is true
         <div className="modal">
-          <div className="modal-box w-96 relative">
+          <div className="modal-box w-full relative">
             <h3 className="text-lg font-normal">Add Item</h3>
             <div className="py-4 pt-7 ">
               <input

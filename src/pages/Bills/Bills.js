@@ -12,8 +12,8 @@ const Bills = () => {
         </h2>
         <div className="flex items-center gap-3">
           <Link to="/Bills/NewBill">
-            <button className="py-1 px-3 rounded text-sm text-white bg-[#097D0D]">
-              New Bills
+            <button className="py-3 px-7 rounded text-sm text-white bg-[#097D0D]">
+              New Bill
             </button>
           </Link>
           <button className="py-2 px-2 text-sm bg-[#CCCCCC] rounded">
