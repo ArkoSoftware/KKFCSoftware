@@ -7,7 +7,7 @@ const Payroll = () => {
     <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px]">
       <div className="md:flex justify-between items-center">
         <h2 className="text-xl mb-10 md:m-0">Payroll</h2>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center justify-end gap-5">
           <Link to="/hr/addEmployee">
             <button className="py-1 px-7 rounded text-sm text-white bg-[#097D0D]">
               Add Employee
@@ -19,7 +19,7 @@ const Payroll = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-7">
+      <div className="flex md:justify-between flex-col md:flex-row gap-5 md:gap-0 items-center mt-7">
         <p className="text-xs text-gray-500">
           View all your employee details here and make sure
           <br />
@@ -32,37 +32,37 @@ const Payroll = () => {
         </div>
       </div>
 
-      <div className="overflow-x-auto mt-14 px-14">
+      <div className="overflow-x-auto mt-14 md:px-14">
         <table className="w-full">
           <thead className="bg-[#EAEAEA] rounded">
             <tr>
-              <th className="font-normal text-xs py-2 text-gray-500 rounded-tl-xl rounded-bl-xl">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500 rounded-tl-xl rounded-bl-xl">
                 NAME
               </th>
-              <th className="font-normal text-xs py-2 text-gray-500">LEAVE DAY</th>
-              <th className="font-normal text-xs py-2 text-gray-500">WORKING DAY</th>
-              <th className="font-normal text-xs py-2 text-gray-500">OVERTIME</th>
-              <th className="font-normal text-xs py-2 text-gray-500">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">LEAVE DAY</th>
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">WORKING DAY</th>
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">OVERTIME</th>
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">
                 OVERTIME
                 <br />
                 PAY SALARY
               </th>
-              <th className="font-normal text-xs py-2 text-gray-500">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">
                 TOTAL
                 <br />
                 SALARY
               </th>
-              <th className="font-normal text-xs py-2 text-gray-500">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">
                 GROSS
                 <br />
                 SALARY
               </th>
-              <th className="font-normal text-xs py-2 text-gray-500">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500">
                 NET SALARY LESS
                 <br />
                 ADV AND TDS
               </th>
-              <th className="font-normal text-xs py-2 text-gray-500 rounded-tr-xl rounded-br-xl">
+              <th className="px-10 font-normal text-xs py-2 text-gray-500 rounded-tr-xl rounded-br-xl">
                 TDS DEDUCTION 1%
                 <br /> FROM GS
               </th>

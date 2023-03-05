@@ -33,8 +33,8 @@ const NewVendor = () => {
   }
   return (
     <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px]">
-      <div className="md:flex justify-between items-center">
-        <h2 className="text-xl mb-10 md:m-0 font-bold">New Vendor</h2>
+      <div className="flex justify-between items-center">
+        <h2 className="text-xl font-bold">New Vendor</h2>
         <div className="flex items-center gap-5">
           <button className="py-2 px-2 text-sm bg-[#CCCCCC] rounded">
             <BsThreeDots />
@@ -46,7 +46,7 @@ const NewVendor = () => {
         onSubmit={handleSubmit}
         className="mt-12 grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-start"
       >
-        <div className="md:w-96">
+        <div className="w-full md:w-96">
           <p className="mb-3">Personal Information</p>
           <label htmlFor="name" className="block text-sm mb-2">
             Name

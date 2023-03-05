@@ -3,9 +3,10 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { toast } from "react-hot-toast";
+import { ThreeDots } from "react-loader-spinner";
 
 const Login = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, loading } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const signInHandler = (event) => {
@@ -77,10 +78,23 @@ const Login = () => {
             </Link>
           </div>
           <button
-            className="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 w-full text-sm mt-5"
+            className="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 w-full text-sm mt-5 relative"
             type="submit"
           >
-            Login
+            {loading ? (
+              <div className="flex justify-center py-1">
+                <ThreeDots
+                  height="11"
+                  width="80"
+                  radius="9"
+                  color="#fff"
+                  wrapperStyle={{}}
+                  visible={true}
+                />
+              </div>
+            ) : (
+              "Login"
+            )}
           </button>
         </form>
       </div>

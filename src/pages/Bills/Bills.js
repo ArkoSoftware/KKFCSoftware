@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 const Bills = () => {
   return (
     <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[36px]">
-      <div className="md:flex justify-between items-center">
+      <div className="flex justify-between items-center">
         <h2 className="text-xl mb-10 md:m-0">
           Bills <HiStar className="inline text-xs" />
         </h2>
         <div className="flex items-center gap-3">
           <Link to="/Bills/NewBill">
-            <button className="py-3 px-7 rounded text-sm text-white bg-[#097D0D]">
+            <button className="py-1 px-7 rounded text-sm text-white bg-[#097D0D]">
               New Bill
             </button>
           </Link>
@@ -22,7 +22,7 @@ const Bills = () => {
         </div>
       </div>
 
-      <div className="flex justify-between mx-10 mt-10">
+      <div className="flex justify-center md:justify-between flex-wrap md:mx-10 mt-10">
         <div className="flex px-7 py-2 flex-col items-center">
           <h3 className="text-3xl text-[#2825CB]">Rs.200K</h3>
           <div className="bg-gray-400 h-[1px] w-10 mt-3 mb-1"></div>

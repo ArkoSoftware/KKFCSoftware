@@ -20,7 +20,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [verified, setVerified] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -28,17 +28,18 @@ const AuthProvider = ({ children }) => {
   };
 
   const signInUser = async (email, password) => {
-    setLoading(true);
     const col1 = collection(db, "verifiedUser");
     const q = query(col1, where("email", "==", email));
     const snap = await getDocs(q);
     if (!snap.empty) {
       setVerified(true);
     }
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const updateUser = (profile) => {
+    setLoading(true);
     return updateProfile(auth.currentUser, profile);
   };
 

@@ -11,7 +11,7 @@ const HR = () => {
       <section className="pl-[15px] lg:pl-[36px] pt-[24px] pr-[15px]">
         <div className="md:flex justify-between items-center">
           <h2 className="text-xl mb-10 md:m-0">HR</h2>
-          <div className="flex items-center gap-5">
+          <div className="flex justify-center items-center gap-5">
             <Link to="/hr/payrol">
               <button className="py-1 px-5 rounded text-sm text-white bg-[#097D0D]">
                 Payroll
@@ -28,7 +28,7 @@ const HR = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mt-7">
+        <div className="flex md:justify-between flex-col md:flex-row gap-5 md:gap-0 items-center mt-7">
           <p className="text-xs text-gray-500">
             Check their individual data or view
             <br />
@@ -46,7 +46,7 @@ const HR = () => {
           </div>
         </div>
 
-        <div className="overflow-x-auto mt-14 px-14">
+        <div className="overflow-x-auto mt-14 md:px-14">
           <table className="w-full">
             <thead className="bg-[#EAEAEA] rounded">
               <tr>
