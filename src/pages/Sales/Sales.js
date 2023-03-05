@@ -77,14 +77,16 @@ const Sales = () => {
                           ]);
                         }
                       }}
-                      className="bg-[#097D0D] text-sm text-white px-3 py-[6px] rounded"
+                      className="bg-[#097D0D] text-xs md:text-sm text-white px-3 py-[6px] rounded"
                     >
                       Add Invoice
                     </button>
                     <button
-                      className="ml-12"
-                      onClick={() => {setIsModalOn(!isModalOn)
-                      setIsSidebarOn(!isSideBarOn)}}
+                      className="ml-5 md:ml-12"
+                      onClick={() => {
+                        setIsModalOn(!isModalOn);
+                        setIsSidebarOn(!isSideBarOn);
+                      }}
                     >
                       <FaTimesCircle />
                     </button>
@@ -95,14 +97,14 @@ const Sales = () => {
                   <label htmlFor="customerName" className="text-sm">
                     Customer Name
                   </label>
-                  <div className="flex gap-5 mt-1">
+                  <div className="flex flex-col md:flex-row gap-3 md:gap-5 mt-1">
                     <select
                       onChange={(e) => {
                         if (e.target.value != "" || e.target.value == null) {
                           setCustomer(e.target.value);
                         }
                       }}
-                      className="input input-bordered w-[75%]"
+                      className="input input-bordered w-full md:w-[75%]"
                     >
                       <option value={""}></option>
                       {vendorName.map((item, index) => (
@@ -114,7 +116,7 @@ const Sales = () => {
                     <input
                       type="date"
                       onChange={(e) => setInvoiceDate(e.target.value)}
-                      className="input input-bordered w-[25%]"
+                      className="input input-bordered w-full md:w-[25%]"
                     />
                   </div>
                 </div>

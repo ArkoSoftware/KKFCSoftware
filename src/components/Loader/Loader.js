@@ -3,12 +3,12 @@ import { RotatingLines } from "react-loader-spinner";
 
 const Loader = () => {
   return (
-    <div className="flex justify-center mt-32">
+    <div className="flex justify-center mt-56">
       <RotatingLines
         strokeColor="grey"
         strokeWidth="5"
         animationDuration="0.75"
-        width="96"
+        width="56"
         visible={true}
       />
     </div>
