@@ -16,6 +16,8 @@ import HR from "../pages/HR/HR";
 import EditInfo from "../pages/HR/EditInfo";
 import AddEmployee from "../pages/HR/AddEmployee";
 import Payroll from "../pages/HR/Payroll";
+import NewVendor from "../pages/Vendors/NewVendor";
+import JoinCompany from "../pages/JoinCompany/JoinCompany";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +27,7 @@ export const router = createBrowserRouter([
         <Main />
       </PrivateRoute>
     ),
+
     children: [
       {
         path: "/",
@@ -50,6 +53,12 @@ export const router = createBrowserRouter([
         path: "/purchase/vendors",
         element: <Vendors />,
       },
+
+      {
+        path: "/purchase/newVendor",
+        element: <NewVendor />,
+      },
+
       {
         path: "/purchase/BaltraElectronics",
         element: <BaltraElectronics />,
@@ -84,8 +93,13 @@ export const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+
   {
     path: "/signUp",
     element: <SignUp />,
+  },
+  {
+    path: "/joinCompany",
+    element: <JoinCompany />,
   },
 ]);

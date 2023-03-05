@@ -100,7 +100,6 @@ const AdjustStock = () => {
           </button>
         </div>
       </section>
-
       <CreateInventoryModal />
     </>
   );

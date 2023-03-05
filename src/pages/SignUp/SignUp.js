@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { toast } from "react-hot-toast";
+import { sendEmailVerification, signOut } from "firebase/auth";
 
 const SignUp = () => {
   const { createUser, updateUser } = useContext(AuthContext);
@@ -21,9 +22,12 @@ const SignUp = () => {
         if (user) {
           updateUser({ displayName: name })
             .then(() => {
-              toast.success("Sign Up successfully!");
+              sendEmailVerification(user);
+              toast.success("Account Created!!! Verify Email To Login");
+              signOut(user);
+
               form.reset();
-              navigate("/");
+              navigate("/login");
             })
             .catch((err) => console.log(err));
         }

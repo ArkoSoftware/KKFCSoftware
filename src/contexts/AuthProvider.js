@@ -8,9 +8,10 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import { app } from "../config/firebase";
+import { app, db } from "../config/firebase";
 import { useEffect } from "react";
 import { useState } from "react";
+import { collection, getDocs, query, where } from "firebase/firestore/lite";
 
 export const AuthContext = createContext();
 
@@ -18,15 +19,22 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [verified, setVerified] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const signInUser = (email, password) => {
+  const signInUser = async (email, password) => {
     setLoading(true);
+    const col1 = collection(db, "verifiedUser");
+    const q = query(col1, where("email", "==", email));
+    const snap = await getDocs(q);
+    if (!snap.empty) {
+      setVerified(true);
+    }
     return signInWithEmailAndPassword(auth, email, password);
   };
 
@@ -53,6 +61,7 @@ const AuthProvider = ({ children }) => {
     signInUser,
     user,
     loading,
+    verified,
     logOut,
   };
   return (
