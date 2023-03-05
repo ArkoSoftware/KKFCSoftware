@@ -21,6 +21,7 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [isSideBarOn, setIsSidebarOn] = useState(true);
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -64,6 +65,8 @@ const AuthProvider = ({ children }) => {
     loading,
     verified,
     logOut,
+    isSideBarOn,
+    setIsSidebarOn,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

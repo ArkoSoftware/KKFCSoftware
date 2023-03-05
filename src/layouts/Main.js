@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Sidebar from "../components/Sidebar/Sidebar"; 
 
 const Main = () => {
   const [sidebarOn, setSidebarOn] = useState(false);
@@ -16,7 +16,11 @@ const Main = () => {
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
-          <label htmlFor="my-drawer" className="drawer-overlay" onClick={() => setSidebarOn(!sidebarOn)}></label>
+          <label
+            htmlFor="my-drawer"
+            className="drawer-overlay"
+            onClick={() => setSidebarOn(!sidebarOn)}
+          ></label>
           <Sidebar />
         </div>
       </div>
