@@ -119,7 +119,7 @@ const Sales = () => {
                       className="input input-bordered w-full md:w-[25%]"
                     />
                   </div> 
-                </div>
+                </div> 
 
                 <SalesTable
                   itemList={itemData}
