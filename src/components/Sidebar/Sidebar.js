@@ -7,10 +7,14 @@ import { sidebarData } from "./SidebarData";
 import logo from "../../assets/logo.png";
 
 const Sidebar = () => {
-  const { logOut } = useContext(AuthContext);
+  const { logOut, isSideBarOn, setIsSidebarOn } = useContext(AuthContext);
 
   return (
-    <ul className="menu p-4 pt-[30px] px-[20px] w-[210px] bg-black text-base-content">
+    <ul
+      className={`menu p-4 pt-[30px] px-[20px] w-[210px] bg-black text-base-content duration-300 ${
+        !isSideBarOn && "hidden"
+      }`}
+    >
       <li>
         <Link to="/" className="bg-transparent">
           <img src={logo} className="w-[120px] mb-[41px]" alt="" />

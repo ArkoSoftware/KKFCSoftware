@@ -37,7 +37,7 @@ const SalesTable = ({ tableData, setTableData, vat, itemList }) => {
           <tbody className="bg-[#DCDCDC] ">
             {tableData.map((docs, index) => {
               return (
-                <tr className=" border-b border-gray-400">
+                <tr key={index} className=" border-b border-gray-400">
                   <th className="font-normal text-sm">{index + 1}</th>
                   <td className="p-2 text-center text-sm">
                     <select

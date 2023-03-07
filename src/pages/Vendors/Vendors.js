@@ -40,7 +40,7 @@ const Vendors = () => {
         </Link>
       </div>
 
-      <div className="flex justify-between mx-10 mt-10">
+      <div className="flex justify-center md:justify-between flex-wrap md:mx-10 mt-10">
         <div className="flex px-7 py-2 flex-col items-center">
           <h3 className="text-3xl text-[#2825CB]">Rs.200K</h3>
           <div className="bg-gray-400 h-[1px] w-10 mt-3 mb-1"></div>
