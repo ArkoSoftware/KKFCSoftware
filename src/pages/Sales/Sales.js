@@ -118,7 +118,7 @@ const Sales = () => {
                       onChange={(e) => setInvoiceDate(e.target.value)}
                       className="input input-bordered w-full md:w-[25%]"
                     />
-                  </div>
+                  </div> 
                 </div>
 
                 <SalesTable
